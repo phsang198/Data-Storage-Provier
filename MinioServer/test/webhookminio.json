@@ -1,0 +1,48 @@
+{
+	"EventName": "s3:ObjectRemoved:Delete",
+	"Key": "vbdmapservice/styles/Polygon.xml",
+	"Records": [
+		{
+			"eventVersion": "2.0",
+			"eventSource": "minio:s3",
+			"awsRegion": "",
+			"eventTime": "2024-04-05T09:25:08.861Z",
+			"eventName": "s3:ObjectRemoved:Delete",
+			"userIdentity": {
+				"principalId": "admin"
+			},
+			"requestParameters": {
+				"principalId": "admin",
+				"region": "",
+				"sourceIPAddress": "127.0.0.1"
+			},
+			"responseElements": {
+				"content-length": "164",
+				"x-amz-id-2": "f3271bcb6730e9f651bf1fcc6fe4d2059b8af3832e9440f374a5841b611e302f",
+				"x-amz-request-id": "17C3580FF34D28E0",
+				"x-minio-deployment-id": "b64d21b1-2cfd-47fa-a1a7-6c56cd70d681",
+				"x-minio-origin-endpoint": "http://10.225.1.13:9000"
+			},
+			"s3": {
+				"s3SchemaVersion": "1.0",
+				"configurationId": "Config",
+				"bucket": {
+					"name": "vbdmapservice",
+					"ownerIdentity": {
+						"principalId": "admin"
+					},
+					"arn": "arn:aws:s3:::vbdmapservice"
+				},
+				"object": {
+					"key": "styles%2FPolygon.xml",
+					"sequencer": "17C3580FF35B74A4"
+				}
+			},
+			"source": {
+				"host": "127.0.0.1",
+				"port": "",
+				"userAgent": "MinIO (windows; amd64) minio-go/v7.0.69 MinIO Console/(dev)"
+			}
+		}
+	]
+}

@@ -1,0 +1,46 @@
+1. viết service network telnet 
+2. sửa workflow server với engine mới, cập nhật result, đăng kí tất cả model -> done
+
+done -> thêm cột input output -> sửa hàm update instance model  
+done -> sửa lại hàm load all instance -> đọc thêm input, output -> sửa lại lst_instance
+done -> sửa lại hàm StaticMangerWorkFlow::addInstance -> khi post instance thì ko thêm input , khi run thì có 
+done -> sửa lại hàm run instance -> start , restart , resume
+
+3. sửa lại client với workflow mới update  -> done
+	
+3. wrapper yyjson
+4. add keypair s2s , c2s 
+5. build v8							-> gay done
+6. Check id rsc -> role				-> done
+7. webhook 
+	- nghiên cứu cái webhook của minio
+	- nghiên cứu xem nó có thêm webhook bằng api dc ko?
+	
+8. rảnh thì viết lại phần đọc viết request response
+
+json x = json::parse(text); // chứa json  
+
+json nul ; 				// khởi tạo rỗng
+
+x["key"] = variant value      // gán nhiều loại giá trị cho một object 
+							  // có thể là một json::array , json::object
+							  
+json _js = json::parse(data) ;
+json tmp ; 
+tmp = _js["key"] 	
+	-> phải viết operator = và operator []
+
+tmp = tmp["key2"] 
+	-> nếu là object hoặc array thì oke -> MOVE từ child node -> root node 
+
+// custom json["key"] = template và json = json2["key] 
+
+// assert loại giá trị  string , double , int 
+
+// push_back nhiều loại giá trị vô json::array
+
+// hàm duyệt array 
+
+// hàm merge_patch  hợp 2 object thành 1  
+
+// 
